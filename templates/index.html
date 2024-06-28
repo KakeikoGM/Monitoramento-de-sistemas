@@ -1,0 +1,49 @@
+{{define "Index"}}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css" media="screen">
+    <title>Monitor de sistemas</title>
+    
+
+</head>
+<body>
+    <div class="conteiner">
+        <div class="cabecalho">
+            <h1 class="titulo">Monitor de Sistema</h1>
+            <img src="/imagens/Line 1.svg" alt="" class="linha">
+        </div>
+        <div class="explicacao-ativo" id="explicacao">
+            <p class="text-explicacao">Esse monitor vai mostrar o uso da CPU, a porcentagem de uso do seu disco e a porcentagem de uso da memória RAM. No momento é só isso que ele é capaz de fazer, com o passar do tempo novas funcionalidades serão adicionadas. Para começar é so clicar no botão “ monitorar ”</p>
+        </div>
+        <div class="resultados-desativo" id="resultado">
+            {{range .}}
+            <div class="cpu">
+                <img src="{{.Imagem}}" alt="" class="img-cpu">
+                <h2 class="titulo-cpu">{{.Nome}}</h2>
+                <p class="text-cpu">O uso {{.Texto}} está em {{.Dado}} %</p>
+            </div>
+            {{end}}
+            <!-- <div class="disk">
+                <img src="/imagens/disk.png" alt="" class="img-disk">
+                <h2 class="titulo-disk">Disco</h2>
+                <p class="text-disk">O uso do disco está em %</p>
+            </div>
+            <div class="RAM">
+                <img src="/imagens/virtual-memory.png" alt="" class="img-RAM">
+                <h2 class="titulo-RAM">RAM</h2>
+                <p class="text-RAM">O uso da RAM está em %</p>
+            </div> -->
+            <img src="/imagens/Line 1.svg" alt="" class="linha1">
+            <img src="/imagens/Line 1.svg" alt="" class="linha2">
+        </div>
+    </div>
+    <div class="btns">
+        <button class="btn-monitorar" id="btn-monitorar">Monitorar</button>
+    </div>
+        <script src="css/index.js"></script>
+</body>
+</html>
+{{end}}

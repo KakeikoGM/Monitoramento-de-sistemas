@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+
+:root{
+    --cor-verde: #59ff00;
+    --cor-preto: #1a1c1b;
+    --cor-cinza: #555d58;
+    --fonte-principal: 'Palanquin Dark'
+}

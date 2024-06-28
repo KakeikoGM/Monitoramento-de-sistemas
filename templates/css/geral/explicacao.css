@@ -1,0 +1,14 @@
+.explicacao-ativo{
+    text-align: center;
+    display: block;
+}
+.explicacao-desativo{
+    display: none;
+}
+.text-explicacao{
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-preto);
+    margin: 5em 10em;
+    line-height: 35px;
+}

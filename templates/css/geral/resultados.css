@@ -1,0 +1,39 @@
+.resultados-ativo{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+.resultados-desativo{
+    display: none;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+.img-cpu, .img-disk, .img-RAM{
+    width: 80px;
+}
+.cpu, .disk, .RAM{
+    text-align: center;
+}
+.titulo-cpu, .titulo-disk, .titulo-RAM{
+    margin: 2em 0 3em 0;
+    font-family: var(--fonte-principal);
+    color: var(--cor-preto);
+    font-size: 24px;
+}
+.text-cpu, .text-disk, .text-RAM{
+    font-family: var(--fonte-principal);
+    color: var(--cor-preto);
+    font-size: 16px;
+}
+.linha1, .linha2{
+    transform: rotate(90deg);
+    width: 500px;
+    position: absolute;
+    top: 380px;
+}
+.linha1{
+    right: 570px;
+}
+.linha2{
+    left: 570px;
+}

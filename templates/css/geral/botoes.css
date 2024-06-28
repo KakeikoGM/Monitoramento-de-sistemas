@@ -1,0 +1,16 @@
+.btns{
+    margin: 12em .5em 0 68em;
+}
+.btn-monitorar{
+    font-size: 20px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-verde);
+    background-color: var(--cor-preto);
+    border: 1px solid var(--cor-preto);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn-monitorar:active{
+    background-color: var(--cor-cinza);
+}
